@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+    <ImageView
+      android:id="@+id/logoMyT"
+      android:layout_width="281dp"
+      android:layout_height="133dp"
+      android:contentDescription="img"
+      android:src="@drawable/mytlogo"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.232" />
+
+    <Button
+      android:id="@+id/citiesButtonF"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="296dp"
+      android:text="go to Cities"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+      android:id="@+id/cameraButton"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_marginEnd="296dp"
+      android:drawableLeft="@drawable/ic_menu_camera"
+      app:layout_constraintBottom_toTopOf="@+id/logoMyT"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.659" />
+
+    <ImageView
+      android:id="@+id/userPhoto"
+      android:layout_width="70dp"
+      android:layout_height="69dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="16dp"
+      android:background="#FFFFFF"
+      android:src="@drawable/ic_launcher_foreground"
+      app:layout_constraintBottom_toTopOf="@+id/logoMyT"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

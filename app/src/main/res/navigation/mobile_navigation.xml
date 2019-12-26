@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/mobile_navigation"
+  app:startDestination="@+id/nav_home">
+
+  <fragment
+    android:id="@+id/nav_home"
+    android:name="com.example.kotlintest.ui.home.HomeFragment"
+    android:label="@string/menu_home"
+    tools:layout="@layout/fragment_home" />
+
+  <!--
+  <activity
+    android:id="@+id/nav_home"
+    android:name="com.example.kotlintest.MainActivity"
+    android:label="@string/menu_home"
+    tools:layout="@layout/activity_home" />
+    -->
+
+  <activity
+    android:id="@+id/nav_cities"
+    android:name="com.example.kotlintest.CitiesActivity"
+    android:label="@string/menu_cities"
+    tools:layout="@layout/activity_cities" />
+
+  <!--
+  <fragment
+    android:id="@+id/nav_cities"
+    android:label="@string/menu_cities"
+    tools:layout="@layout/activity_cities" >
+    <action
+      android:id="@+id/action_nav_cities_self"
+      app:destination="@id/nav_cities"
+      app:enterAnim="@anim/nav_default_enter_anim"
+      app:exitAnim="@anim/nav_default_exit_anim" />
+  </fragment>
+  -->
+
+  <fragment
+    android:id="@+id/nav_tools"
+    android:name="com.example.kotlintest.ui.tools.ToolsFragment"
+    android:label="@string/menu_tools"
+    tools:layout="@layout/fragment_tools" />
+
+  <fragment
+    android:id="@+id/nav_share"
+    android:name="com.example.kotlintest.ui.share.ShareFragment"
+    android:label="@string/menu_share"
+    tools:layout="@layout/fragment_share" />
+
+  <activity
+    android:id="@+id/nav_login"
+    android:name="com.example.kotlintest.ui.login.LoginActivity"
+    android:label="@string/menu_login"
+    tools:layout="@layout/activity_login" />
+
+  <fragment
+    android:id="@+id/nav_send"
+    android:name="com.example.kotlintest.ui.send.SendFragment"
+    android:label="@string/menu_send"
+    tools:layout="@layout/fragment_send" />
+</navigation>
